@@ -10,6 +10,9 @@ const app = express();
 // Connect Database
 connectDB();
 
+/// Init middlewre
+app.use(express.json({extended: false}));
+
 // single endpoint
 app.get('/', (req, res) => res.send('API Running'));
 
