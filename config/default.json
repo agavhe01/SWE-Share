@@ -1,4 +1,6 @@
 {
     "mongoURI": "mongodb+srv://agavhera:Physics123!@devconnector.0jqdtho.mongodb.net/?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken"
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "fce223638f6998be6613",
+    "githubSecret": "5409c27efa2160b87265fa23cd1a4b9f24ba6150"
 }
