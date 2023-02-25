@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://agavhera:Physics123!@devconnector.0jqdtho.mongodb.net/?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://agavhera:Physics123!@devconnector.0jqdtho.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
 }
