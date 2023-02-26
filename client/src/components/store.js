@@ -1,8 +1,8 @@
 import {
-  legacy_createStore,
+  //legacy_createStore,
   applyMiddleware,
   createStore,
-  configureStore,
+  //configureStore,
 } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
