@@ -14,7 +14,8 @@ import { Provider } from 'react-redux';
 import store from './components/store';
 import { loadUser } from './components/actions/auth';
 import setAuthToken from './components/utils/setAuthToken';
-
+import Dashboard from './components/dashboard/Dashboard';
+import PrivateRoute from './components/routing/PrivateRoute';
 //
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -37,6 +38,10 @@ const App = () => {
             <Routes>
               <Route exact path='/register' element={<Register />} />
               <Route exact path='/login' element={<Login />} />
+              <Route
+                path='dashboard'
+                element={<PrivateRoute component={Dashboard} />}
+              />
             </Routes>
           </section>
         </Fragment>
