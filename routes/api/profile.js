@@ -12,6 +12,7 @@ const checkObjectId = require('../../middleware/checkObjectId');
 
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
+const Posts = require('../../models/Posts');
 const request = require('request');
 // const Post = require('../../models/Post');
 
@@ -143,8 +144,8 @@ router.delete('/', auth, async (req, res) => {
     // Remove user posts
     // Remove profile
     // Remove user
+    // await Post.deleteMany({ user: req.user.id }); Posts not deleting for some reason
     await Promise.all([
-      // Post.deleteMany({ user: req.user.id }),
       Profile.findOneAndRemove({ user: req.user.id }),
       User.findOneAndRemove({ _id: req.user.id }),
     ]);
