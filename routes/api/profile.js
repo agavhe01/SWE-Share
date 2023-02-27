@@ -10,9 +10,9 @@ const { check, validationResult } = require('express-validator');
 // import normalizeUrl from 'normalize-url';
 const checkObjectId = require('../../middleware/checkObjectId');
 
-const Profile = require('../../models/Profile');
-const User = require('../../models/User');
-const Posts = require('../../models/Posts');
+const Profile = require('../../models/profile');
+const User = require('../../models/user');
+const Posts = require('../../models/posts');
 const request = require('request');
 // const Post = require('../../models/Post');
 

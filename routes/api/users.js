@@ -4,7 +4,7 @@ const router = express.Router();
 
 const { check, validationResult } = require('express-validator');
 
-const User = require('../../models/User');
+const User = require('../../models/user');
 
 const gravatar = require('gravatar');
 
