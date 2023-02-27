@@ -11,7 +11,7 @@ import './App.css';
 
 import CreateProfile from './components/profile-forms/CreateProfile';
 import Profiles from './components/profiles/Profiles';
-// import Profile from './components/profile/Profile';
+import Profile from './components/profile/Profile';
 // Redux
 import { Provider } from 'react-redux';
 import store from './components/store';
@@ -44,7 +44,7 @@ const App = () => {
               <Route exact path='/register' element={<Register />} />
               <Route exact path='/login' element={<Login />} />
               <Route exact path='/profiles' element={<Profiles />} />
-              {/*<Route path="profile/:id" element={<Profile />} /> */}
+              <Route path='/profile/:id' element={<Profile />} />
               <Route
                 path='dashboard'
                 element={<PrivateRoute component={Dashboard} />}
